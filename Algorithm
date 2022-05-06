@@ -1,0 +1,27 @@
+1. This algorithm serves multiple requests in parallel and reduces waiting time.
+
+2. Dividing 200 floors to 10 different zones and each zone is operated with 5 elevators each.
+
+3. If we consider elevator is at ground floor in zone-1(1-20 floors), 
+the elevator will move all the way upside, serving all the requests that come in its way.
+
+4. Only once it reaches the top floor, the elevator will change its direction, 
+moving all the way to the last floor, serving all the requests that come in its way.
+
+5. For this approach, the elevator scans for a request at every floor while moving up and down. 
+
+Ex: The elevator starts at floor 3 and finds a request at floor 5 and 9 when moving up. 
+It stops at these floors, picks the passenger and continues moving up. 
+Only at the last floor, i.e., floor 10, the elevator will change direction and start moving down. 
+It will drop the two passengers it has picked at their destination floor as soon as it comes in the elevator’s path. 
+While moving down, the elevator checks at every floor and finds a request at floors 4 and 2. 
+It picks the passengers as it reaches their floors and drops them as soon as their destination comes in its path.
+
+6. Since, 5 elevators are considered for 20 floors, then if elevator-1 starts from ground position moving up,
+elevator-2 will be moving down from 20th floor. Similarly other elevators are moved alternatively.
+
+7. During peak hours if elevators are moved in a pattern like if elevators goes in a sequence when elevator-1 at 4th floor, 
+elevator-2 at 8th and so on moving up and one elevator at ground to pick up passengers then it will reduce waiitng time 
+during peak hours.
+
+8. some elevators should be allocated for emergency alarms, VIP persons etc.

@@ -1,0 +1,72 @@
+1. Direction:
+
+public enum Direction {
+    UP, DOWN
+}
+
+2. External System:
+
+public class ExternalControl {
+     private Direction direction;
+     private int source;
+}
+
+3. Internal system:
+
+public class InternalControl {
+     private int destination;
+}
+
+4. Control:
+
+public class Control {
+     private InternalControl internalControl;
+     private ExternalControl externalControl;
+     void request(int floor, Direction direction);
+}
+
+5. State:
+
+public enum State {
+     STATIONARY, MOVING, OUTOFORDER
+}
+
+6. Elevator:
+
+public class Elevator {
+     private int ID;
+     private int currentFloor;
+     private State state;
+     private Direction direction;
+}
+
+7. Display:
+
+public class Display {
+     private int currentFloor;
+     private Direction direction;
+}
+
+8. Floor:
+
+public class Floor {
+     private int id;
+     private int door[];
+     int NumberofDoors();
+}
+
+9. Building:
+
+public class Building {
+     private Floor floor[];
+     private Elevator elevator[];
+     int numberOfFloors();
+     int numberOfElevators();
+}
+
+10. Scheduler:
+
+public class Scheduler {
+     private requests[];
+     dispatch(int elevator Id, int floor);
+}

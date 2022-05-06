@@ -1,0 +1,15 @@
+Requirements for Elevator
+
+1. Elevator can have 3 states: Moving, Stationary, Out of order for maintenance.
+2. Elevator can move in 2 directions: Down and up.
+3. Door is opened only when elevator is in stationary position.
+4. Internal system: user can choose the floor they wanted to go.
+5. External system: Depending on the direction user wants to go, up or down button is pressd.
+6. Algorithm to decide direction of elevator if more than one passenger requests for elevator.
+
+
+
+Requirements for Elevator system:
+
+1. Assuming total no.of floors in the building are 200
+2. Assuming there are 50 elevators, 10,000 people in the building and max load as 20.

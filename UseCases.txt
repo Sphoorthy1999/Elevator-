@@ -1,0 +1,16 @@
+There are 2 actors in the system:
+
+1. Passenger
+2. Elevator System
+
+Usecases for passengers:
+
+1. Request for elevator
+2. Open/Close doors.
+3. Emergency Triggers
+
+Usecases for System:
+
+1. Open/Close doors
+2. Moving direction
+3. Indicates position/Direction.
